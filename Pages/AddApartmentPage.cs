@@ -1,9 +1,5 @@
 ﻿using ModelUI.UIElements;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace ModelUI.Pages
 {
@@ -18,8 +14,10 @@ namespace ModelUI.Pages
             new UIInputText($"Enter Owner Name").Ask(out string name);
             new UICheckBox("Apartment Type", new string[] { "Studio", "2-BHK", "3-BHK" }).Ask(out int apartmenttype);
 
-            Console.WriteLine($"{apartmentnumber}, {apartmenttype}, {name}");
+            Console.WriteLine($"Successfully Added : {apartmentnumber}, {apartmenttype}, {name}\n\n Press a Key to Continue ... ");
             Console.ReadKey();
+            UIHandler.Pop();
+            return;
 
 
         }
