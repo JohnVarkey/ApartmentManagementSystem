@@ -9,17 +9,22 @@ namespace ModelUI.Pages
 
         public override void Display()
         {
+
             base.DisplayHeader();
             new UIInputText($"Enter Apartment Number").Ask(out string apartmentnumber);
-            new UIInputText($"Enter Owner Name").Ask(out string name);
-            new UICheckBox("Apartment Type", new string[] { "Studio", "2-BHK", "3-BHK" }).Ask(out int apartmenttype);
+            bool isOccupied = true;
 
-            Console.WriteLine($"Successfully Added : {apartmentnumber}, {apartmenttype}, {name}\n\n Press a Key to Continue ... ");
+            new UIInputText($"Enter Owner Name(if unoccupied press enter):-").Ask(out string name);
+            if(name.Length == 0) isOccupied = false;
+            string[] type = new string[] { "Studio", "2-BHK", "3-BHK" };
+
+            new UICheckBox("Apartment Type",type ).Ask(out int apartmenttype);
+
+            Console.WriteLine($"Successfully Added : {apartmentnumber}, {type[apartmenttype]}, {name}, {isOccupied}\n\nPress a Key to Continue ... ");
             Console.ReadKey();
             UIHandler.Pop();
             return;
-
-
         }
     }
 }
+    
