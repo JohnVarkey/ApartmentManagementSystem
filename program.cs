@@ -9,12 +9,10 @@ namespace ModelUI
     {
         static Building Condoor = new Building("Condoor", 20);
         static string filepath = @"C:\Users\johnkoodarathil\Training\DotNet\ModelUI\ModelUI\Logs.txt";
-        static StreamWriter sw;
         public static void Main()
         {
             try
             {
-
                 if (!File.Exists(filepath))
                 {
                     File.Create(filepath);
@@ -37,7 +35,6 @@ namespace ModelUI
         private static void LoggerInit()
         {
             
-            LogManager.AddLogger(new ConsoleLogger());
             LogManager.AddLogger(new FileLogger(filepath));
         }
 

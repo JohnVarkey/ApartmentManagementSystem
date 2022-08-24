@@ -1,6 +1,7 @@
 ﻿using CustomException;
 using ModelUI.UIElements;
 using Logger;
+using System.Reflection;
 
 namespace ModelUI.Pages
 {
@@ -21,10 +22,13 @@ namespace ModelUI.Pages
                 new UIInputText($"Enter Vehicle Model").Ask(out string model);
                 new UIInputText($"Enter Apartment Number").Ask(out string apt_no);
                 UIHandler.Building.AddAVehicle(lp, vtype[type], model, true, apt_no);
+                LogManager.Log(new CustomInfo($"Succefully Added Vehicle: {lp}, {vtype[type]}, {model}"));
                 Console.WriteLine($"Succefully Added Vehicle: {lp}, {vtype[type]}, {model}");
             }catch(Exception err)
             {
-                LogManager.Log(new CustomError(err.Message));
+                LogManager.Log(new CustomError(err.Message)); 
+                Console.WriteLine($"Error :: {err.Message}");
+
 
             }
             finally

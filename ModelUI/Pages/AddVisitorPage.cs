@@ -18,10 +18,12 @@ namespace ModelUI.Pages
                 new UIInputText($"Enter Reason").Ask(out string reason);
                 new UIInputText($"Enter Apartment ID").Ask(out string apt_no);
                 UIHandler.Building.AddAVisitor(name, id, reason, apt_no);
-                Console.WriteLine($"Successfully Added a Visitor: {name}, {id}, in {apt_no}. Reason: {reason}\n\n Press a Key to Continue ... ");
+                LogManager.Log(new CustomInfo($"Successfully Added a Visitor: {name}, {id}, {apt_no}, {reason}"));
+                Console.WriteLine($"Successfully Added a Visitor: {name}, {id}, {apt_no}, {reason}\n\n Press a Key to Continue ... ");
             }catch(Exception err)
             {
                 LogManager.Log(new CustomError(err.Message));
+                Console.WriteLine($"Error :: {err.Message}");
 
             }
             finally

@@ -20,10 +20,12 @@ namespace ModelUI.Pages
                 new UIInputText($"Enter license plate number").Ask(out string lp);
                 new UICheckBox("Enter the status of the vehicle", status).Ask(out int index);
                 UIHandler.Building.UpdateVehicleStatus(lp, apartmentnumber, status[index]);
+                LogManager.Log(new CustomInfo($"Successfully updated the vehicle status: {apartmentnumber}, {lp}, {status}"));
                 Console.WriteLine($"Successfully updated the vehicle status: {apartmentnumber}, {lp}, {status} \n\n Press a Key to Continue ... ");
             }catch(Exception err)
             {
                 LogManager.Log(new CustomError(err.Message));
+                Console.WriteLine($"Error :: {err.Message}");
             }
             finally
             {

@@ -30,12 +30,14 @@ namespace ModelUI.Pages
                 new UICheckBox("Apartment Type", type).Ask(out int apartmenttype);
 
                 UIHandler.Building.AddAppartment(apartmentnumber, name, type[apartmenttype], isOccupied);
-                Console.WriteLine("\nSuccessfully Added\n\nPress a Key to Continue ... ");
+                LogManager.Log(new CustomInfo($"Apartment Added Succesfully: ({apartmentnumber}, {name}, {type[apartmenttype]},{isOccupied})"));
+                Console.WriteLine($"\nApartment Successfully Added: ({apartmentnumber}, {name}, {type[apartmenttype]},{isOccupied})\n\nPress a Key to Continue ... ");
             }
             
             catch (Exception err)
             {
                 LogManager.Log(new CustomError(err.Message));
+                Console.WriteLine($"Error :: {err.Message}");
 
 
             }

@@ -18,6 +18,7 @@ namespace ModelUI.Pages
                 new UIInputText($"Enter Relation to the Owner: ").Ask(out string relation);
                 new UIInputText($"Enter Occupation: ").Ask(out string occupation);
                 UIHandler.Building.AddFamilyMember(apartmentnumber, membername, dob, relation, occupation);
+                LogManager.Log(new CustomInfo($"Successfully Added : {apartmentnumber}, {membername}, {dob}, {relation}, {occupation}"));
                 Console.WriteLine($"Successfully Added : {apartmentnumber}, {membername}, {dob}, {relation}, {occupation}\n\n Press a Key to Continue ... ");
                 Console.ReadKey();
 
@@ -25,7 +26,7 @@ namespace ModelUI.Pages
             catch (Exception err)
             {
                 LogManager.Log(new CustomError(err.Message));
-
+                Console.WriteLine($"Error :: {err.Message}");
             }
             finally
             {
