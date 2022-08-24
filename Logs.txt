@@ -1,0 +1,9 @@
+Error: Please check !! Apartment number already exists and is occupied
+Error: Please check !! Apartment number already exists and is occupied
+Error: Index was outside the bounds of the array.
+Error: This Vehicle has been already added !!
+Error: Input string was not in a correct format.
+Error: This Vehicle has been already added !!
+Error: ------Apartment doesn't exist------
+Error: Please check !! Apartment number already exists and is occupied
+Error: Error:24-08-2022 11:31:07:Please check !! Apartment number already exists and is occupied
