@@ -15,8 +15,8 @@ namespace ModelUI.Pages
             {
 
                 base.DisplayHeader();
-                new UIInputText($"Enter Visitor Name: ").Ask(out string visitorname);
-                new UIInputText($"Enter Apartment Number: ").Ask(out string apartmentnumber);
+                new UIInputText($"Enter Visitor Name").Ask(out string visitorname);
+                new UIInputText($"Enter Apartment Number").Ask(out string apartmentnumber);
                 LogManager.Log(new CustomInfo($"Successfully removed the visitor: {visitorname}, {apartmentnumber}"));
                 Console.WriteLine($"Successfully removed the visitor: {visitorname}, {apartmentnumber} \n\n Press a Key to Continue ... ");
             }catch(Exception err)
