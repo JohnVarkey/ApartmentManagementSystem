@@ -9,7 +9,7 @@ namespace ModelUI
     {
         public static string initialdatafilepath = "../../../data.txt";
         static Building Condoor = new Building("Condoor", 20, initialdatafilepath);
-        static string filepath = "./Logs.txt";
+        static string filepath = "Logs.txt";
         public static void Main()
         {
             //try
