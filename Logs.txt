@@ -1,1 +1,0 @@
-Error: Error: 24-08-2022 18:50:21: Please check !! Apartment number already exists and is occupied
