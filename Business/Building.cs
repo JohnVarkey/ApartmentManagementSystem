@@ -18,12 +18,13 @@ namespace CircleStack
 
         FilereadManager FManager;
 
-        WriteManager WM = new WriteManager();
+        WriteManager WM; 
 
         List<Apartment> TotalApartmentList = new List<Apartment>();
 
-        public Building(string name, int total)
+        public Building(string name, int total, string initialFilePath)
         {
+            WM = new WriteManager(initialFilePath);
             this.Details = new BuildingDetails();
             this.FlatName = name;
             this.TotalAppartments = total;

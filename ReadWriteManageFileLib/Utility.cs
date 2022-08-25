@@ -41,11 +41,11 @@ namespace UtilityClass
             path = @$"{currentPath}\{app_no}\{type}.txt";
             return path;
         }
-        public void initializeFileStructure()
+        public void initializeFileStructure(string datapath)
         {
                 if (!Directory.Exists(currentPath)) Directory.CreateDirectory(currentPath);
 
-                string[] lines = File.ReadAllLines(@$"{currentPath}data.txt");
+                string[] lines = File.ReadAllLines(datapath);
                 string[] items;
                 string tempPath = "";
                 foreach (var line in lines)

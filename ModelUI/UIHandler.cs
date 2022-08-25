@@ -37,7 +37,7 @@ namespace ModelUI
         {
             while (activePage.Count != 0)
             {
-                Console.Clear();
+                //Console.Clear();
                 activePage.Peek().Display();
             }
         }

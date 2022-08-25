@@ -21,12 +21,12 @@ namespace FileManager
         private List<IWriteManager> writers;
         private IWriteManager filewriter;
         private Utility U = new Utility();
-        public WriteManager()
+        public WriteManager(string initialFilePath)
         {
             writers = new List<IWriteManager>();
             filewriter = new FileWriteManager();
             writers.Add(filewriter);
-            U.initializeFileStructure();
+            U.initializeFileStructure(initialFilePath);
         }
         public void writeApartmentData(string ap_no, string line)
         {

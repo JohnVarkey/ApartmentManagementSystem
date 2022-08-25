@@ -7,8 +7,9 @@ namespace ModelUI
 {
     public class Program
     {
-        static Building Condoor = new Building("Condoor", 20);
-        static string filepath = @"./Logs.txt";
+        public static string initialdatafilepath = "../../../data.txt";
+        static Building Condoor = new Building("Condoor", 20, initialdatafilepath);
+        static string filepath = Directory.GetCurrentDirectory()+@"./Logs.txt";
         public static void Main()
         {
             //try

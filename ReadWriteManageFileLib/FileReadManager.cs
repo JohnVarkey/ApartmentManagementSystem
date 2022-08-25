@@ -24,7 +24,7 @@ namespace FileManager
             //  this.paths = paths;
             //  this.lines = lines;
             Console.WriteLine("Read manager initialize");
-            U.initializeFileStructure();
+            U.initializeFileStructure("../../../../data.txt");
 
 
         }
