@@ -10,7 +10,7 @@ namespace ModelUI.Pages
         public override void Display()
         {
             base.DisplayHeader();
-            new UICheckBox("Menu", new string[] { "Add Apartment", "Add Family Member", "Add Regular Visitor","Add a Vehicle","Update Vehicle Status","Remove a Regular Visitor", "Generate Report" }).Ask(out int reroute);
+            new UICheckBox("Menu", new string[] { "Add Apartment", "Add Family Member", "Add Regular Visitor","Add a Vehicle","Update Vehicle Status","Remove a Regular Visitor", "Generate Report", "Exit" }).Ask(out int reroute);
             switch (reroute)
             {
                 case 0:
@@ -38,6 +38,9 @@ namespace ModelUI.Pages
                     Console.WriteLine("Press a Key to Continue ...");
                     Console.ReadLine();
                     Console.Clear();
+                    break;
+                case 7:
+                    UIHandler.Pop();
                     break;
                 default:
                     Console.WriteLine("\nInvalid Option");

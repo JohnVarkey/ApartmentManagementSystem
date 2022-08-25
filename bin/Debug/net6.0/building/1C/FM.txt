@@ -1,0 +1,4 @@
+Mr Aravind Bisht,Business,11/12/1988,Husband
+Mrs Seema Bisht,Homemaker,11/07/1990,Self
+MP01CX4567,4 Wheeler,Toyota Fortuner,OUT
+MP01CC2233,4 Wheeler,Renault Kwid,OUT
