@@ -1,8 +1,0 @@
-Info: 25-08-2022 16:25:02: Apartment Added Succesfully: (1A, , 3-BHK,False)
-Info: 25-08-2022 16:32:17: Apartment Added Succesfully: (1A, , Studio,False)
-Info: 25-08-2022 16:32:36: Successfully Added : 1A, john, 16/06/2000, Brother, Doctor
-Info: 25-08-2022 16:34:02: Apartment Added Succesfully: (1A, john, Studio,True)
-Info: 25-08-2022 16:49:27: Apartment Added Succesfully: (1A, , Studio,False)
-Info: 25-08-2022 17:14:54: Apartment Added Succesfully: (1A, john, Studio,True)
-Error: 25-08-2022 17:20:07: Value was of invalid format
-Error: 25-08-2022 17:40:28: Please check !! Apartment number already exists and is occupied
