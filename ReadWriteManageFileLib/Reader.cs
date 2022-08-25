@@ -20,7 +20,7 @@ namespace FileManager
                 throw new Exception("For reading whole file does not found at this location " + path);
 
             }
-            string[] lines = System.IO.File.ReadAllLines(path);
+            string[] lines = File.ReadAllLines(path);
             List<string> tempList = new List<string>();
             int count = 0;
             List<List<string>> list = new List<List<string>>();

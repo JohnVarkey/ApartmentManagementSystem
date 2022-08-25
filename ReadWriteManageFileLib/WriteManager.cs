@@ -20,13 +20,14 @@ namespace FileManager
     {
         private List<IWriteManager> writers;
         private IWriteManager filewriter;
-        private Utility U = new Utility();
+        private Utility U;
         public WriteManager(string initialFilePath)
         {
+            U = new Utility(initialFilePath);
             writers = new List<IWriteManager>();
-            filewriter = new FileWriteManager();
+            filewriter = new FileWriteManager(initialFilePath);
             writers.Add(filewriter);
-            U.initializeFileStructure(initialFilePath);
+            U.initializeFileStructure();
         }
         public void writeApartmentData(string ap_no, string line)
         {
@@ -83,9 +84,9 @@ namespace FileManager
     {
         private string path { get; set; }
         public Utility utility { get; set; }
-        public FileWriteManager()
+        public FileWriteManager(string initialFilePath)
         {
-            utility = new Utility();
+            utility = new Utility(initialFilePath);
         }
         public void writeApartmentData(string ap_no, string line)
         {

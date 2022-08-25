@@ -1,0 +1,6 @@
+Mr Rahul Khanna,Smuggler,12/12/1978,Self
+Mrs Reena Khanna,Software Engineer,11/07/1976,Wife
+Tommy Khanna,Gamer,31/03/1996,Son
+Twinkle Khanna,Modelling,25/02/1999,Daughter
+KL01BT4567,4 Wheeler,XUV 500,IN
+KL01BT1234,2 Wheeler,Royal Enfield Hunter 350,OUT

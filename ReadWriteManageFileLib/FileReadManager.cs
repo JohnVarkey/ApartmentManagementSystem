@@ -11,20 +11,17 @@ namespace FileManager
 {
     internal class FilereadManager : IFileReadManager
     {
-       // public string paths { get; set; }
-       // public string[] lines { get; set; }
-      //  public string ap_no { get; set; }
 
-
+        string initalfilepath = String.Empty;
         ValueObjectParser vp = new ValueObjectParser();
         IReader reader=new Reader();
-        Utility U = new Utility();
-        public FilereadManager()
+        Utility utility;
+        public FilereadManager(string initalFilePath)
         {
-            //  this.paths = paths;
-            //  this.lines = lines;
+            utility = new Utility(initalFilePath);
+            this.initalfilepath = initalFilePath;
             Console.WriteLine("Read manager initialize");
-            U.initializeFileStructure("../../../../data.txt");
+            utility.initializeFileStructure();
 
 
         }
@@ -32,40 +29,33 @@ namespace FileManager
 
         public List<APVO> readAllData()
         {
-
-
-
- 
-            return vp.convertAllDataFromFile(reader.ReadWholeFile(@"D:\building\data.txt"));
-
-
-
+            return vp.convertAllDataFromFile(reader.ReadWholeFile(initalfilepath));
         }
 
         public List<RVVO> readVisitorData(string ap_no)
         {
-            string path = U.getFilePath(ap_no, "RV");
+            string path = utility.getFilePath(ap_no, "RV");
 
-            return vp.convertVisitorDataFromFile(U.readFromFilePath(path));
+            return vp.convertVisitorDataFromFile(utility.readFromFilePath(path));
         }
 
         public List<ADVO> readApartMentData(string ap_no)
         {
-            string path = U.getFilePath(ap_no, "AD");
-            return vp.convertApartmentDataFromFile(U.readFromFilePath(path));
+            string path = utility.getFilePath(ap_no, "AD");
+            return vp.convertApartmentDataFromFile(utility.readFromFilePath(path));
 
         }
 
         public List<VDVO> readVehicleData(string ap_no)
         {
-            string path = U.getFilePath(ap_no, "VD");
-            return vp.convertVehicleDataFromFile(U.readFromFilePath(path));
+            string path = utility.getFilePath(ap_no, "VD");
+            return vp.convertVehicleDataFromFile(utility.readFromFilePath(path));
         }
 
         public List<FMVO> readMembers(string ap_no)
         {
-            string path = U.getFilePath(ap_no,"FM");
-            return vp.convertFamilyMemberDataFromFile(U.readFromFilePath(path));
+            string path = utility.getFilePath(ap_no,"FM");
+            return vp.convertFamilyMemberDataFromFile(utility.readFromFilePath(path));
 
         }
 
