@@ -1,0 +1,15 @@
+C:\Users\johnkoodarathil\Training\DotNet\ModelUI\ModelUI\bin\Debug\net6.0\ModelUI.exe
+C:\Users\johnkoodarathil\Training\DotNet\ModelUI\ModelUI\bin\Debug\net6.0\ModelUI.deps.json
+C:\Users\johnkoodarathil\Training\DotNet\ModelUI\ModelUI\bin\Debug\net6.0\ModelUI.runtimeconfig.json
+C:\Users\johnkoodarathil\Training\DotNet\ModelUI\ModelUI\bin\Debug\net6.0\ModelUI.dll
+C:\Users\johnkoodarathil\Training\DotNet\ModelUI\ModelUI\bin\Debug\net6.0\ModelUI.pdb
+C:\Users\johnkoodarathil\Training\DotNet\ModelUI\ModelUI\obj\Debug\net6.0\ModelUI.csproj.AssemblyReference.cache
+C:\Users\johnkoodarathil\Training\DotNet\ModelUI\ModelUI\obj\Debug\net6.0\ModelUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\johnkoodarathil\Training\DotNet\ModelUI\ModelUI\obj\Debug\net6.0\ModelUI.AssemblyInfoInputs.cache
+C:\Users\johnkoodarathil\Training\DotNet\ModelUI\ModelUI\obj\Debug\net6.0\ModelUI.AssemblyInfo.cs
+C:\Users\johnkoodarathil\Training\DotNet\ModelUI\ModelUI\obj\Debug\net6.0\ModelUI.csproj.CoreCompileInputs.cache
+C:\Users\johnkoodarathil\Training\DotNet\ModelUI\ModelUI\obj\Debug\net6.0\ModelUI.dll
+C:\Users\johnkoodarathil\Training\DotNet\ModelUI\ModelUI\obj\Debug\net6.0\refint\ModelUI.dll
+C:\Users\johnkoodarathil\Training\DotNet\ModelUI\ModelUI\obj\Debug\net6.0\ModelUI.pdb
+C:\Users\johnkoodarathil\Training\DotNet\ModelUI\ModelUI\obj\Debug\net6.0\ModelUI.genruntimeconfig.cache
+C:\Users\johnkoodarathil\Training\DotNet\ModelUI\ModelUI\obj\Debug\net6.0\ref\ModelUI.dll

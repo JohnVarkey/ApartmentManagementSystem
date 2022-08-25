@@ -30,7 +30,7 @@ namespace Logger
         {
             using (StreamWriter sw = File.AppendText(path))
             {
-                sw.WriteLine($"Error: {exception.GetExceptionInfo()}");
+                sw.WriteLine($"{exception.GetExceptionInfo()}");
 
             }
         }
