@@ -8,10 +8,7 @@ namespace FileManager
 {
     internal class Reader : IReader
     {
-        
 
-
-   
 
         public List<List<string>> ReadWholeFile(string path)
         {
@@ -43,10 +40,7 @@ namespace FileManager
 
                 }
                 else 
-                
                     tempList.Add(line);
-                
-
             }
 
 
